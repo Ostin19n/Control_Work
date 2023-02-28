@@ -34,3 +34,13 @@ for (int x = 0; x < size; x++)
     }
 }
 Console.WriteLine();
+PrintArray(arrayElements);
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.WriteLine($"{i + 1}-й элемент: соответствие требованиям -> [{array[i]}]");
+    }
+    Console.WriteLine();
+}
